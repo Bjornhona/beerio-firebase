@@ -1,0 +1,75 @@
+.alert h5 {
+  color: red;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.hiddenAlert {
+  height: 40px;
+}
+
+.login-div {
+  min-height: 100%;
+  text-align: center;
+}
+
+.login-background {
+  position: absolute;
+  top: var(--nav-size);
+  left: 0;
+  background-image: url('./beer-199650_1920.jpg');
+  width: 100%;
+  height: calc(100% - var(--nav-size));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -3;
+}
+
+.light-overlay {
+  position: absolute;
+  left: 0;
+  top: var(--nav-size);
+  background-color: rgba(255, 255, 255, 0.2);
+  min-height: calc(100% - var(--nav-size));
+  width: 100%;
+  z-index: -2;
+}
+
+.login-box {
+  position: absolute;
+  top: calc(50% + var(--nav-size)/2);
+  right: 50%;
+  transform: translate(0, -50%);
+  background-color: var(--text-color);
+  padding: 60px;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  box-shadow: 2px 3px 10px var(--bg);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.login-button {
+  box-shadow: 2px 2px 10px #99804e;
+  margin: 15px;
+}
+
+/* --- Typhography ---- */
+
+.login-footer {
+  color: var(--bg-accent);
+  padding-top: 30px;
+}
+
+.signup-text {
+  font-weight: bold;
+  color: var(--medium-brown);
+}

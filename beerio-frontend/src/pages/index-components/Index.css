@@ -1,0 +1,68 @@
+.index-div {
+  min-height: 100%;
+  text-align: center;
+}
+
+.index-background {
+  position: absolute;
+  top: var(--nav-size);
+  left: 0;
+  background-image: url('./beers-background.jpg');
+  width: 100%;
+  height: calc(100% - var(--nav-size));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -3;
+}
+
+.index-overlay {
+  position: absolute;
+  left: 0;
+  top: var(--nav-size);
+  background-color: rgba(255, 255, 255, 0.2);
+  min-height: calc(100% - var(--nav-size));
+  width: 100%;
+  z-index: -2;
+}
+
+.index-box {
+  position: absolute;
+  top: calc(50% + var(--nav-size)/2);
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(36, 38, 38, 0.9);
+  padding: 60px;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---- typography ---- */
+
+.beerio-title {
+  color: white;
+  font-size: 160px;
+  line-height: 160px;
+  padding-top: 60px;
+  text-shadow: 2px 3px 10px black;
+  padding-bottom: 5px;
+}
+
+
+/* ---- Components ---- */
+
+.common-button {
+  box-shadow: none;
+  margin-bottom: 0;
+  margin-top: 30px;
+};
+
+.buttons-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}

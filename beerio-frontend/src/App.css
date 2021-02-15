@@ -1,0 +1,184 @@
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: auto;
+  padding: auto;
+  background-image: linear-gradient(#99804e, #d2bb93, #eee6da);
+  min-height: 100%;
+  background-repeat: no-repeat;
+  color: var(--bg);
+  font-family: Montserrat-Regular, 'Times Sans Serif', sans-serif;
+  font-size: 12px;
+}
+
+.section {
+  margin: 60px;
+}
+
+@media (max-width: 479px) {
+  .section {
+    margin: 0 7px;
+  }
+}
+
+
+/* ---- generic for menus ---- */
+
+:root {
+  --light-brown: #EEE6DA;
+  --lighter-brown: #D2BB93;
+  --medium-brown: #99804E;
+  --dark-brown: #513E29;
+  --bg: #242626;
+  --bg-accent: #484a4d;
+  --lighter-grey: #ABACB1;
+  --text-color: #dadce1;
+  --nav-size: 60px;
+  --border: 1px solid #474a4d;
+  --border-radius: 8px;
+  --speed: 500ms;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--bg);
+  text-decoration: none;
+}
+
+input[type=text], input[type=password] {
+  border: none;
+  background-color: white;
+  font-size: 12px;
+  font-family: Montserrat-Regular;
+  padding: 0 30px;
+  height: 45px;
+  margin: 0 0 15px 0;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  color: white;
+}
+
+
+/* ---- typography ---- */
+
+h1, h2, h3, h4, h5, p {
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  line-height: 180%;
+}
+
+h1 {
+  font-family: MrsSaintDelafield-Regular;
+  font-size: 80px;
+  line-height: 75px;
+  color: var(--medium-brown);
+}
+
+h2 {
+  font-family: 'Times Sans Serif', Arial;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-style: bold;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 12px;
+}
+
+/* ---- App ---- */
+
+.nav-headline {
+  color: white;
+  text-transform: uppercase;
+}
+
+.header-logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+
+/* ---- beers ---- */
+
+.beers-title {
+  display: flex;
+  align-items: center;
+}
+
+.beers-title {
+  margin-top: 0;
+}
+
+.searchbar input{
+  width: 100%;
+}
+
+.beer-name, .organic {
+  padding: 15px;
+}
+
+.beer-name h5 {
+  margin-top: 0;
+}
+
+/* ---- mood ---- */
+
+.mood-image {
+  width: 50px;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+.mood-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mood-page {
+  padding: 15px 0;
+}

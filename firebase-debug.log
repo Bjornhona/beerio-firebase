@@ -1,0 +1,95 @@
+[debug] [2021-02-15T06:56:57.262Z] ----------------------------------------------------------------------
+[debug] [2021-02-15T06:56:57.264Z] Command:       /Users/Asa/.nvm/versions/node/v13.12.0/bin/node /Users/Asa/.nvm/versions/node/v13.12.0/bin/firebase init
+[debug] [2021-02-15T06:56:57.264Z] CLI Version:   9.3.0
+[debug] [2021-02-15T06:56:57.264Z] Platform:      darwin
+[debug] [2021-02-15T06:56:57.264Z] Node Version:  v13.12.0
+[debug] [2021-02-15T06:56:57.266Z] Time:          Mon Feb 15 2021 07:56:57 GMT+0100 (Central European Standard Time)
+[debug] [2021-02-15T06:56:57.266Z] ----------------------------------------------------------------------
+[debug] [2021-02-15T06:56:57.266Z] 
+[debug] [2021-02-15T06:56:57.276Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-15T06:56:57.277Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/Asa/Dropbox/Coding/beerio/beerio-2021-firebase/beerio-backend
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using beerio-aa491. 
+[debug] [2021-02-15T06:57:05.366Z] > refreshing access token with scopes: []
+[debug] [2021-02-15T06:57:05.366Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-15T06:57:05.529Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 15 Feb 2021 06:57:05 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-15T06:57:05.561Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/beerio-aa491 [none]
+[debug] [2021-02-15T06:57:05.792Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/beerio-aa491 200
+[debug] [2021-02-15T06:57:05.793Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/beerio-aa491 {"projectId":"beerio-aa491","projectNumber":"812797687916","displayName":"Beerio","name":"projects/beerio-aa491","resources":{"hostingSite":"beerio-aa491"},"state":"ACTIVE"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-02-15T06:57:05.794Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-15T06:57:05.794Z] > authorizing via signed-in user
+[debug] [2021-02-15T06:57:05.795Z] [iam] checking project beerio-aa491 for permissions ["firebase.projects.get"]
+[debug] [2021-02-15T06:57:05.795Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-15T06:57:05.795Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-15T06:57:05.943Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Mon, 15 Feb 2021 06:57:05 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-15T06:57:05.963Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/beerio-aa491:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-02-15T06:57:07.056Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 15 Feb 2021 06:57:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=742","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-15T06:57:07.058Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/beerio-aa491/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-02-15T06:57:07.058Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/beerio-aa491/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-02-15T06:57:07.926Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 15 Feb 2021 06:57:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-15T06:57:07.976Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 15 Feb 2021 06:57:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  Wrote functions/package.json 
+[info] ✔  Wrote functions/.eslintrc.js 
+[info] ✔  Wrote functions/index.js 
+[info] ✔  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] ✔  Wrote beerio-frontend/build/404.html 
+[debug] [2021-02-15T06:59:49.267Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-02-15T06:59:49.362Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-02-15T06:59:49.363Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.2.7","browserURL":"https://www.gstatic.com/firebasejs/8.2.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.2.7/firebase.tgz"},"live":{"version":"8.2","browserURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.2.7/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.2.7/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.2.7/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.2.7/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.2.7/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.2.7/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.memory.js"}}
+[info] ✔  Wrote beerio-frontend/build/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/Asa/Dropbox/Coding/beerio/beerio-2021-firebase 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=862793225&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-02-15T07:00:23.057Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"0efd7cf3dde38bbc3206","redirect_uri":"http://localhost:9005","state":"862793225"}
+[debug] [2021-02-15T07:00:23.346Z] <<< HTTP RESPONSE 200 {"date":"Mon, 15 Feb 2021 07:00:23 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","server":"GitHub.com","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"W/\"736103668f20d5132683cf6604db4d5f\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js","x-github-request-id":"DC25:F10D:224C503:2C03A79:602A1C07"}
+[debug] [2021-02-15T07:00:23.347Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-02-15T07:00:23.681Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-02-15T07:00:23.681Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Bjornhona","id":40568435,"node_id":"MDQ6VXNlcjQwNTY4NDM1","avatar_url":"https://avatars.githubusercontent.com/u/40568435?v=4","gravatar_id":"","url":"https://api.github.com/users/Bjornhona","html_url":"https://github.com/Bjornhona","followers_url":"https://api.github.com/users/Bjornhona/followers","following_url":"https://api.github.com/users/Bjornhona/following{/other_user}","gists_url":"https://api.github.com/users/Bjornhona/gists{/gist_id}","starred_url":"https://api.github.com/users/Bjornhona/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Bjornhona/subscriptions","organizations_url":"https://api.github.com/users/Bjornhona/orgs","repos_url":"https://api.github.com/users/Bjornhona/repos","events_url":"https://api.github.com/users/Bjornhona/events{/privacy}","received_events_url":"https://api.github.com/users/Bjornhona/received_events","type":"User","site_admin":false,"name":"Åsa Eriksson","company":"Graphics by Åsa","blog":"info@graphicsbyasa.com","location":"Barcelona","email":"asaeri3@hotmail.com","hireable":null,"bio":"Javascript, MongoDB, Express, React, Node.js, ES6, HTML5 y CSS. Web developer and Industrial Engineer with former experience in web design, high language skills","twitter_username":null,"public_repos":71,"public_gists":0,"followers":8,"following":6,"created_at":"2018-06-25T12:36:01Z","updated_at":"2021-02-15T07:00:14Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":112347,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as Bjornhona 
+[info] 
